@@ -49,7 +49,5 @@
 	"Author": "",
 	"Description": "sample-sqlite",
 	"Framework": "Cordova",
-	"projectVersion": 1,
-	"WP8PublisherID": "{1dd11c1f-dc09-4fa8-972e-8c47228eb9a9}",
-	"WP8ProductID": "{177bd8a1-583b-40d8-bb97-1628eb3c4828}"
+	"projectVersion": 1
 }
