@@ -8,13 +8,14 @@ var app = {};
 app.db = null;
       
 app.openDb = function() {
+   var dbName = "Todo.sqlite";
    if (window.navigator.simulator === true) {
         // For debugin in simulator fallback to native SQL Lite
         console.log("Use built in SQL Lite");
-        app.db = window.openDatabase("Todo", "1.0", "Cordova Demo", 200000);
+        app.db = window.openDatabase(dbName, "1.0", "Cordova Demo", 200000);
     }
     else {
-        app.db = window.sqlitePlugin.openDatabase("Todo");
+        app.db = window.sqlitePlugin.openDatabase(dbName);
     }
 }
       
