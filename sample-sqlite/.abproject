@@ -43,9 +43,9 @@
 	],
 	"DisplayName": "Sqlite",
 	"WP8SupportedResolutions": [
+		"ID_RESOLUTION_HD720P",
 		"ID_RESOLUTION_WVGA",
-		"ID_RESOLUTION_WXGA",
-		"ID_RESOLUTION_HD720P"
+		"ID_RESOLUTION_WXGA"
 	],
 	"Author": "",
 	"WP8Publisher": "",
@@ -55,5 +55,9 @@
 	"WP8Requirements": [],
 	"Description": "sample-sqlite",
 	"Framework": "Cordova",
-	"projectVersion": 1
+	"projectVersion": 1,
+	"WP8PublisherID": "{9b59ffbc-f40c-4f7a-8ddb-a9024601e9f5}",
+	"WP8ProductID": "{71c166d2-1c24-4057-9c75-0adbbd77d9dc}",
+	"WP8PackageIdentityName": "1234Telerik.com.telerik.samplesqlite",
+	"WP8WindowsPublisherName": "CN=Telerik"
 }
