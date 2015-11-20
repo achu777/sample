@@ -8,6 +8,8 @@ To-Do App with SQLite
 * [Test the Sample](#test-the-sample)
 * [Limitations](#limitations)
 
+# Overview
+
 This sample shows you how to create a simple to-do app using the Brodysoft SQLitePlugin Apache Cordova plugin from the Telerik Verified Plugins Marketplace. You can add and remove entries from the database of the app.
 
 > *Supported mobile platforms:* iOS, Android, Windows Phone
