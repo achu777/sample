@@ -14,7 +14,7 @@ This sample shows you how to create a simple to-do app using the Brodysoft SQLit
 
 > *Supported mobile platforms:* iOS, Android, Windows Phone
 >
-> *Developed with:* Apache Cordova 3.7.0, Brodysoft SQLitePlugin 1.0.6
+> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 3.7.0, Brodysoft SQLitePlugin 1.0.6
 
 [Back to Top](#top)
 
