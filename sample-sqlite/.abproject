@@ -35,11 +35,12 @@
 		"1",
 		"2"
 	],
-	"FrameworkVersion": "3.7.0",
+	"FrameworkVersion": "4.0.0",
 	"CorePlugins": [
 		"com.phonegap.plugins.sqlite@1.0.6",
-		"org.apache.cordova.device",
-		"org.apache.cordova.splashscreen"
+		"cordova-plugin-device",
+		"cordova-plugin-splashscreen",
+		"cordova-plugin-whitelist"
 	],
 	"DisplayName": "Sqlite",
 	"WP8SupportedResolutions": [
