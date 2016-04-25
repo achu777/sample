@@ -39,12 +39,28 @@ app.addTodo = function(todoText) {
       
 app.onError = function(tx, e) {
 	console.log("Error: " + e.message);
+    app.hideOverlay();
 } 
-      
+
 app.onSuccess = function(tx, r) {
 	app.refresh();
+    app.hideOverlay();
 }
-      
+
+app.hideOverlay = function() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";    
+}
+
+app.showOverlay = function(id) {
+    var overlay = document.getElementById("overlay");
+	
+    overlay.innerHTML = "<div class='row -justify-content-bottom'><div class='col'><button class='button -negative' onclick='app.deleteTodo(" + id + ");'>Delete</button>" + 
+        "<button class='button' onclick='app.hideOverlay();'>Cancel</button></div></div>";
+    
+    overlay.style.display = "block";
+}
+
 app.deleteTodo = function(id) {
 	var db = app.db;
 	db.transaction(function(tx) {
@@ -56,7 +72,8 @@ app.deleteTodo = function(id) {
 
 app.refresh = function() {
 	var renderTodo = function (row) {
-		return "<li>" + "<div class='todo-check'></div>" + row.todo + "<a class='button delete' href='javascript:void(0);'  onclick='app.deleteTodo(" + row.ID + ");'><p class='todo-delete'></p></a>" + "<div class='clear'></div>" + "</li>";
+	    return "<li class='list__item'><i class='list__icon list__icon--check fa fa-check u-color-positive'></i><span class='list__text'>" + row.todo + "</span>" +
+            "<a class='delete' href='javascript:void(0);' onclick='app.showOverlay(" + row.ID + ");'><i class='list__icon list__icon--delete fa fa-trash-o u-color-negative'></i></a></li>";
 	}
     
 	var render = function (tx, rs) {

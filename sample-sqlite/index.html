@@ -1,32 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>SQLite</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta charset="utf-8">
-		<link href="styles/main.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<header class="header"> 
-			<h1>SQLite</h1>
-		</header>
-		<div class="content">
-            <div class="input-area ch30">
-                <input class="inputBox" type="text" id="todo" placeholder="Add New Item" />
-                <button class="button" id="addButton" onclick="addTodo(); return false;">Add</button>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+
+	<link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet">
+	<link href="styles/theme.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1>SQLite</h1>
+	</div>
+	<div class="subheader">
+		<div class="row">
+			<div class="col -width-66">
+				<input id="todo" class="input" type="text" placeholder="Add New Item" />
 			</div>
-            <div class="result-area ch70">
-                <div class="results">
-                    <div class="desc">Todo List:</div>
-                    <ul id="todoItems"></ul>
-                </div>
-                <div class="separator"></div>
-            </div> 
+			<div class="col -width-33">
+				<button class="button" id="addButton" onclick="addTodo(); return false;">Add</button>
+			</div>
 		</div>
-		<footer class="footer">
-			<div>Cordova Plugins Samples</div> 
-		</footer>
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
-	</body>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col -align-center">
+				<p class="label u-color-grey">TODO LIST</p>
+				<ul id="todoItems" class="list"></ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span>Feature Examples</span>
+	</div>
+
+	<div id="overlay" class="overlay" style="display: none;"></div>
+
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
+</body>
 </html>
