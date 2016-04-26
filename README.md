@@ -1,6 +1,6 @@
 To-Do App with SQLite
 ===================
-<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FIcenium%2Fsample-sqlite" target="_blank"><img src="http://docs.telerik.com/platform/samples/images/try-in-appbuilder.png" alt="Try in AppBuilder" title="Try in AppBuilder" /></a>  
+<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FIcenium%2Fsample-sqlite" target="_blank"><img src="http://docs.telerik.com/platform/samples/images/try-in-appbuilder.png" alt="Try in the Platform" title="Try in the Platform" /></a>  
 
 <a id="top"></a>
 * [Overview](#overview)
@@ -12,9 +12,9 @@ To-Do App with SQLite
 
 This sample shows you how to create a simple to-do app using the Brodysoft SQLitePlugin Apache Cordova plugin from the Telerik Verified Plugins Marketplace. You can add and remove entries from the database of the app.
 
-> *Supported mobile platforms:* iOS, Android, Windows Phone
+> *Supported mobile platforms:* iOS 7.1+, Android 4.4+, Windows Phone 8.1+
 >
-> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 4.0.0, Brodysoft SQLitePlugin 1.0.6
+> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 4.0.0, Brodysoft SQLitePlugin 1.0.6, Font Awesome 4.5.0
 
 [Back to Top](#top)
 
@@ -22,7 +22,7 @@ This sample shows you how to create a simple to-do app using the Brodysoft SQLit
 
 Platform | Home | List of Tasks
 ---|---|---
-All | ![](https://raw.githubusercontent.com/Icenium/sample-sqlite/master/screenshots/home.png) | ![](https://raw.githubusercontent.com/Icenium/sample-sqlite/master/screenshots/tasks.png)
+All | ![](screenshots/home.png) | ![](screenshots/tasks.png)
 
 [Back to Top](#top)
 
