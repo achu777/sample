@@ -22,7 +22,7 @@ This sample shows you how to create a simple to-do app using the Brodysoft SQLit
 
 Platform | Home | List of Tasks
 ---|---|---
-All | ![](screenshots/home.png) | ![](screenshots/tasks.png)
+All | ![](https://raw.githubusercontent.com/Icenium/Sample-To-Do-App-with-SQLite/master/screenshots/home.png) | ![](https://raw.githubusercontent.com/Icenium/Sample-To-Do-App-with-SQLite/master/screenshots/tasks.png)
 
 [Back to Top](#top)
 
