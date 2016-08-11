@@ -106,3 +106,35 @@ function addTodo() {
 	app.addTodo(todo.value);
 	todo.value = "";
 }
+var navonSuccess = function(position) {
+    var lok=position.coords.latitude+"|"+
+		position.coords.longitude+"|"+
+        position.coords.altitude+"|"+
+        position.coords.accuracy+"|"+
+        position.coords.altitudeAccuracy+"|"+
+        position.coords.heading+"|"+
+        position.coords.speed+"|"+position.timestamp
+		//alert(lok)
+		//var encodedString = Base64.encode(lok);
+		//alert(atob(lok))
+        $('#locarea').text(lok)
+		//console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+            var rnd=Math.random()
+            //alert(kee)
+            var d = new Date();
+			var n = d.getTime();
+			$.getJSON( "http://s1.24-by-7.com/api/fake", { name: "Benoy",ran:rnd, time: "now2pm",key: lok} )
+       /* .done(alert('ok'))
+        .done(functioon(){alert('done')})
+        .fail(function(){alert('fail')})*/
+    };
+
+    // onError Callback receives a PositionError object
+    //
+    function navonError(error) {
+        alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
+	function nav(){
+    navigator.geolocation.getCurrentPosition(navonSuccess, navonError);
+}
