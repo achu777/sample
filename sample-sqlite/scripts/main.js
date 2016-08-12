@@ -118,12 +118,13 @@ var navonSuccess = function(position) {
 		//var encodedString = Base64.encode(lok);
 		//alert(atob(lok))
         $('#locarea').text(lok)
+		alert(lok)
 		//console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
             var rnd=Math.random()
             //alert(kee)
             var d = new Date();
 			var n = d.getTime();
-			$.getJSON( "http://s1.24-by-7.com/api/fake", { name: "Benoy",ran:rnd, time: "now2pm",key: lok} )
+			//$.getJSON( "http://s1.24-by-7.com/api/fake", { name: "Benoy",ran:rnd, time: "now2pm",key: lok} )
        /* .done(alert('ok'))
         .done(functioon(){alert('done')})
         .fail(function(){alert('fail')})*/
