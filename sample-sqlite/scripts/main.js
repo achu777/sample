@@ -173,8 +173,9 @@ fetch=function(){
 	var kee=123;
 	var rnd=Math.random();*/
 	//name:"John"+n,ran:rnd,time:n+"__p",key:kee
+	$.ajaxSetup({crossDomain:true});
 	$.getJSON("http://s1.24-by-7.com/api/fake",{asd:"123"})
-	.done(function(json){
+	/*.done(function(json){
 		$.each(json.r,function(i,item)
 		{
 			if(item.ta==111){
@@ -187,6 +188,6 @@ fetch=function(){
 				$('#todoItems').innerHTML=hha+item.tc+hhb
 			}
 		})
-	})
+	})*/
 	/**/
 }
