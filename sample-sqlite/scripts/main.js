@@ -165,7 +165,8 @@ aas= function() {
 }
 
 fetch=function(){
-	$("todoItems").text('cleared');
+	alert('fetch')
+	//$("todoItems").text('cleared');
 	/*
 	var d=new Date();
 	var n=d.getTime();
