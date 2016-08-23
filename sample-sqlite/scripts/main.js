@@ -139,3 +139,27 @@ var navonSuccess = function(position) {
 	function nav(){
     navigator.geolocation.getCurrentPosition(navonSuccess, navonError);
 }
+
+aas= function() {
+	var renderTodo = function (row) {
+	    return "<li class='list__item'><i class='list__icon list__icon--check fa fa-check u-color-positive'></i><span class='list__text'>" + row.cnt + "</span>" +
+            "<a class='delete' href='javascript:void(0);' onclick='app.showOverlay(" + row.cnt + ");'><i class='list__icon list__icon--delete fa fa-trash-o u-color-negative'></i></a></li>";
+	}
+    
+	var render = function (tx, rs) {
+		var rowOutput = "";
+		var todoItems = document.getElementById("todoItems");
+		for (var i = 0; i < rs.rows.length; i++) {
+			rowOutput += renderTodo(rs.rows.item(i));
+		}
+      
+		todoItems.innerHTML = rowOutput;
+	}
+    
+	var db = app.db;
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT count(*) as cnt FROM todo", [], 
+					  render, 
+					  app.onError);
+	});
+}
