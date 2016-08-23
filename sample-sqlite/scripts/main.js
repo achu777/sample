@@ -170,7 +170,8 @@ fetch=function(){
 	var n=d.getTime();
 	var kee=123;
 	var rnd=Math.random();
-	$.getJSON("http://s1.24-by-7.com/api/fake",{name:"John"+n,ran:rnd,time:n+"__p",key:kee})
+	//name:"John"+n,ran:rnd,time:n+"__p",key:kee
+	$.getJSON("http://s1.24-by-7.com/api/fake",{asd:"123"})
 	.done(function(json){
 		$.each(json.r,function(i,item)
 		{
