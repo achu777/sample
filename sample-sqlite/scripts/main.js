@@ -163,3 +163,22 @@ aas= function() {
 					  app.onError);
 	});
 }
+
+fetch=function(){
+	var d=new Date();
+	var n=d.getTime();
+	$.getJSON"http://s1.24-by-7.com/api/fake".{name:"John"+n,ran:rnd,time:n+"__p",key:kee})
+	.done(function(json){
+		$.each(json.r,function(i,item)
+		{
+			if(item.ta==111){
+				
+			}else{
+				var hha="<div>"	;
+				var hhb="</div>";
+				$("#rescon").append(hha+item.tc.hhb)
+			}
+		})
+	})
+	
+}
