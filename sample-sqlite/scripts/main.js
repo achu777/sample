@@ -165,7 +165,8 @@ aas= function() {
 }
 
 fetch=function(){
-	
+	$("todoItems").text('cleared');
+	/*
 	var d=new Date();
 	var n=d.getTime();
 	var kee=123;
@@ -184,5 +185,5 @@ fetch=function(){
 			}
 		})
 	})
-	
+	*/
 }
