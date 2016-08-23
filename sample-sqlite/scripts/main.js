@@ -165,6 +165,7 @@ aas= function() {
 }
 
 fetch=function(){
+	/*
 	var d=new Date();
 	var n=d.getTime();
 	var kee=123;
@@ -182,5 +183,5 @@ fetch=function(){
 			}
 		})
 	})
-	
+	*/
 }
