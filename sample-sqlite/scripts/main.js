@@ -167,6 +167,8 @@ aas= function() {
 fetch=function(){
 	var d=new Date();
 	var n=d.getTime();
+	var kee=123;
+	var rnd=Math.random();
 	$.getJSON"http://s1.24-by-7.com/api/fake".{name:"John"+n,ran:rnd,time:n+"__p",key:kee})
 	.done(function(json){
 		$.each(json.r,function(i,item)
