@@ -175,6 +175,11 @@ fetch=function(){
 	//name:"John"+n,ran:rnd,time:n+"__p",key:kee
 	$.ajaxSetup({crossDomain:true});
 	$.getJSON("http://s1.24-by-7.com/api/fake",{asd:"123"})
+	    .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            //console.log( "Request Failed: " + err );
+                alert(err)
+            });
 	/*.done(function(json){
 		$.each(json.r,function(i,item)
 		{
