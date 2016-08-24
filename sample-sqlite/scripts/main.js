@@ -165,6 +165,32 @@ aas= function() {
 }
 
 fetch=function(){
+	//$("#rescon").empty()
+	$.ajaxSetup({crossDomain:true});
+	var kee=123;//$('#skey').val()
+	var rnd=Math.random()
+	//alert(kee)
+	var d = new Date();
+	var n = d.getTime();
+       	$.getJSON( "http://s1.24-by-7.com/api/fake", { name: "GITJohn"+n,ran:rnd, time: n+"_2pm",key: kee} )
+        .done(function( json ) {
+			$.each(json.r, function(i,item)
+				{
+				//alert(item.ta)
+					if(item.ta==111)
+						{
+						}
+				else{
+									var hha='<div>';
+			var hhb='</div>';
+			//$("#rescon").append(hha+item.tc+hhb) ;
+			$('#todoItems').innerHTML=hha+item.tc+hhb
+				}
+				})
+//console.log( "JSON Data: " + json.users[ 3 ].name );
+			console.log( "JSON Data: " + json.r[ 3 ].ta );
+        	
+        })
 	alert('fetch')
 	//$("todoItems").text('cleared');
 	/*
@@ -173,14 +199,14 @@ fetch=function(){
 	var kee=123;
 	var rnd=Math.random();*/
 	//name:"John"+n,ran:rnd,time:n+"__p",key:kee
-	$.ajaxSetup({crossDomain:true});
+/*	$.ajaxSetup({crossDomain:true});
 	$.getJSON("http://s1.24-by-7.com/api/fake",{asd:"123"})
 	    .fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
             //console.log( "Request Failed: " + err );
                 alert(err)
             });
-	/*.done(function(json){
+	.done(function(json){
 		$.each(json.r,function(i,item)
 		{
 			if(item.ta==111){
